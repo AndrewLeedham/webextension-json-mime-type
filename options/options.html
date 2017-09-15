@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>json-mime-type-override options</title>
+
+        <style media="screen" type="text/css">
+
+            h2 {
+                text-decoration: underline;
+            }
+
+            #contentType {
+                width: 30%;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h2>Options</h2>
+
+        <p>You can select only some precise content types if you want to. By default all content type containing json will be overridden.</p>
+        <form>
+
+            <div>
+                <label for="contentType">Add a content types to override :</label>
+                <input id="contentType" type="text">
+                <button id="add" type="button">Add</button>
+            </div>
+
+            <div>
+                <h3>Overridden content types</h3>
+                <ul id="overriddenContentTypes">
+                </ul>
+            </div>
+
+            <div>
+                <button id="deleteAll" type="button">Delete all</button>
+            </div>
+        </form>
+
+        <script src="options.js"></script>
+    </body>
+
+</html>
